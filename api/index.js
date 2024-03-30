@@ -1,11 +1,21 @@
-const express = require("express");
+const express = require('express');
 const app = express();
+const path = require('path');
+const axios = require('axios');
 
-app.get("/express", (req, res) => res.send("Express on Vercel!"));
-app.get("/cliente_servidor", (req, res) => res.send("Cliente Servidor on Vercel!"));
-app.use(express.static('public'))
+app.set('view engine', 'ejs');
+app.set('views', path.resolve('public/servidor/views'));
+app.use(express.static('public'));
 
 
-app.listen(3001, () => console.log("Server ready on port 3001."));
+app.get("/express", (req, res) => res.redirect("http://localhost:3000/express"));
 
-module.exports = app;
+app.get("/cliente_servidor", (req, res) => res.redirect("http://localhost:3003/cliente_servidor"));
+
+
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => {
+  console.log(`Servidor escuchando en el puerto ${PORT}`);
+});
+
+

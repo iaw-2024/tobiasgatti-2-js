@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <title>Listado de Elementos</title>
+</head>
+<body class="bg-gray-100">
+    <h1 class="text-3xl text-center pt-10 font-bold mb-4">Ejercicio Técnico 2 - JS</h1>
+
+    <div class="pt-11">
+    <ul class="divide-y divide-gray-200">
+        <% elementos.forEach(function(elemento) { %>
+          <li class="py-4">
+            <div class="text-center">
+              <div class="ml-3">
+                <p class="text-sm font-medium text-gray-900">
+                  <%= elemento.nombre %>
+                </p>
+                <p class="text-sm text-gray-500">
+                  <%= elemento.ids %>
+                </p>
+              </div>
+            </div>
+          </li>
+        <% }); %>
+      </ul>
+    </div>      
+</body>
+</html>
