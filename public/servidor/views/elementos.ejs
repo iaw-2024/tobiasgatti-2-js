@@ -3,29 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <title>Listado de Elementos</title>
-</head>
-<body class="bg-gray-100">
-    <h1 class="text-3xl text-center pt-10 font-bold mb-4">Ejercicio Técnico 2 - JS</h1>
+  <style>
+    /* Estilos base */
+    h1 {
+        color: #000;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+    }
 
-    <div class="pt-11">
-    <ul class="divide-y divide-gray-200">
-        <% elementos.forEach(function(elemento) { %>
-          <li class="py-4">
-            <div class="text-center">
-              <div class="ml-3">
-                <p class="text-sm font-medium text-gray-900">
-                  <%= elemento.nombre %>
-                </p>
-                <p class="text-sm text-gray-500">
-                  <%= elemento.ids %>
-                </p>
-              </div>
+   
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    li {
+        margin: 5px auto;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 40%;
+        text-align: center;
+        list-style: none;
+    }
+
+    @media screen and (max-width: 480px) {
+        li {
+            width: 90%;
+        }
+    }
+  </style></head>
+<body>
+  <h1>Ejercicio Técnico 2 - JS</h1>
+
+  <div>
+  <ul>
+      <% elementos.forEach(function(elemento) { %>
+        <li class="dinamico">
+          <div>
+            <div>
+              <p>
+                <%= elemento.nombre %>
+              </p>
+              <p>
+                <%= elemento.ids %>
+              </p>
             </div>
-          </li>
-        <% }); %>
-      </ul>
-    </div>      
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>      
 </body>
 </html>
