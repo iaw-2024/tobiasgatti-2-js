@@ -1,5 +1,5 @@
     const mockAPIEndpoint = 'https://6605a0322ca9478ea180cb41.mockapi.io/app/users';
-
+    //aca utilice la url de la api de mockapi para probar 
     const dataList = document.getElementById('data-list');
 
     axios.get(mockAPIEndpoint)

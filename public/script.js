@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch("https://6605a0322ca9478ea180cb41.mockapi.io/app/users")
+    fetch("/datos")
     .then(response => response.json())
     .then(data => {
         const clientList = document.getElementById("data-list");
