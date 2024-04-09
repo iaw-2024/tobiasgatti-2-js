@@ -2,6 +2,8 @@
     //aca utilice la url de la api de mockapi para probar 
     const dataList = document.getElementById('data-list');
 
+
+    
     axios.get(mockAPIEndpoint)
       .then(response => {
         const data = response.data;
