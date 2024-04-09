@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const axios = require('axios');
-
+//axios para comunicar con mockapi
 const PORT = process.env.PORT || 3001;
 
 
