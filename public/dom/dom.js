@@ -10,7 +10,6 @@
           li.innerHTML = `
             <strong>Id:</strong> ${item.id}<br>
             <strong>Nombre:</strong> ${item.name}<br>
-            <strong>Avatar:</strong> <img src='${item.avatar}'><br>
           `;
           dataList.appendChild(li);
         });

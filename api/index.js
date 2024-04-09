@@ -22,19 +22,16 @@ const mockapi=[
   {
     "createdAt": "2024-03-28T10:10:03.952Z",
     "name": "Jennifer Murphy",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1148.jpg",
     "id": "1"
   },
   {
     "createdAt": "2024-03-28T03:52:17.947Z",
     "name": "Louise Mertz",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/100.jpg",
     "id": "2"
   },
   {
     "createdAt": "2024-03-28T17:07:12.832Z",
     "name": "Alfred Hansen I",
-    "avatar": "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/908.jpg",
     "id": "3"
   },]
 
