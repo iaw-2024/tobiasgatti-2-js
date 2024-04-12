@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de Elementos</title>
+  <style>
+    /* Estilos base */
+    h1 {
+        color: #000;
+        font-size: 2em;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+   
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: block;
+        text-align: center;
+    }
+
+    li {
+        margin: 5px auto;
+        position: relative;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        color: #000;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        width: 40%;
+        text-align: center;
+        list-style: none;
+    }
+
+    @media screen and (max-width: 480px) {
+        li {
+            width: 90%;
+        }
+    }
+  </style></head>
+<body>
+  <h1>Ejercicio Técnico 2 - JS</h1>
+
+  <div>
+  <ul>
+      <% elementos.forEach(function(elemento) { %>
+        <li class="dinamico">
+          <div>
+            <div>
+              <p>
+                <%= elemento.nombre %>
+              </p>
+              <p>
+                <%= elemento.ids %>
+              </p>
+            </div>
+          </div>
+        </li>
+      <% }); %>
+    </ul>
+  </div>      
+</body>
+</html>

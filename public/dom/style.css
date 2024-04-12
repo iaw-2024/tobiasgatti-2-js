@@ -1,0 +1,75 @@
+/* Estilos base */
+h1 {
+    color: #000;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav {
+    background-color:cadetblue;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+}
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+nav ul li {
+    margin: 0 10px;
+}
+:hover a{
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+    text-align: center;
+}
+
+li {
+    margin: 5px auto;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    color: #000;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    width: 40%;
+    text-align: center;
+    list-style: none;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    #segunda-lista li {
+        width: 90%; 
+    }
+}
